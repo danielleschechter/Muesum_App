@@ -1,0 +1,6 @@
+<%= link_to "view by artist", artists_path %>
+<ul>
+<% @paintings.each do |painting| %>
+<li><%= painting.title %> </li>
+<% end %>
+</ul>
