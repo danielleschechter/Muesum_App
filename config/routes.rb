@@ -1,7 +1,13 @@
 MuseumApp::Application.routes.draw do
   
+  get "museums/show"
+  get "museums/edit"
+  get "museums/create"
+  get "museums/update"
+  get "museums/index"
   resources :paintings
   resources :artists
+  resources :museums
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
